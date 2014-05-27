@@ -2,10 +2,10 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
+@import "font.css";
 // endbower
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 .browsehappy {
     margin: 0.2em 0;
@@ -39,12 +39,8 @@ body {
         padding: 0;
     }
 
-    &.nodal-open {
-        #coming { opacity: 0; }
-        #signup-overlay {
-            opacity: 1;
-            visibility: visible;
-        }
+    &.loaded {
+        &::after { opacity: 0.4; }
     }
 }
 
@@ -52,13 +48,14 @@ body::after {
     content: "";
     background: url('../images/bg.jpg') no-repeat center;
     background-size: cover;
-    opacity: 0.4;
+    opacity: 0.0;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     position: absolute;
     z-index: -1;
+    @include transition(0.2s);
 }
 
 a, a:hover { color: #fff; }
@@ -94,7 +91,7 @@ p:last-child {
     }
 
     h1.large {
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Avenir', 'Montserrat', sans-serif;
         font-weight: 400;
         font-size: 32px;
         width: 280px;
@@ -142,7 +139,7 @@ p:last-child {
             }
 
             a.button {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Avenir', 'Montserrat', sans-serif;
                 margin: 0 auto 16px;
                 text-decoration: none;
                 background: #24ADE3;
@@ -253,7 +250,7 @@ p:last-child {
 
     h3 {
         margin-bottom: 30px;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Avenir', 'Montserrat', sans-serif;
     }
 }
 
