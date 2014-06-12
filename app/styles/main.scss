@@ -2,17 +2,168 @@ $icon-font-path: "/bower_components/bootstrap-sass-official/vendor/assets/fonts/
 
 // bower:scss
 @import "../../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap.scss";
-@import "font.css";
 // endbower
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,200);
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
+// Fonts
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Light.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Light.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Light.svg#78de6cebc05d0d6b5836c87138de5726') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  200;
 }
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-LightOblique.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-LightOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-LightOblique.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-LightOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-LightOblique.svg#9fe9e58f48462802eb2f273b6706b444') format('svg'); /* Legacy iOS */
+
+  font-style:   oblique;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Book.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Book.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Book.svg#589202c858e9ee116eab4a8685515b5e') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  300;
+}
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-BookOblique.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-BookOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-BookOblique.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-BookOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-BookOblique.svg#e0a93c26982fe9d755bfcde07d9194c8') format('svg'); /* Legacy iOS */
+
+  font-style:   oblique;
+  font-weight:  300;
+}
+
+
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Oblique.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Oblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Oblique.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Oblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Oblique.svg#0067c5fc2d7e322f7b0187e3c69a2051') format('svg'); /* Legacy iOS */
+
+  font-style:   oblique;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Roman.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Roman.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Roman.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Roman.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Roman.svg#2b3cb83e00b279c4ab15de4d02a9caf1') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  400;
+}
+
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Medium.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Medium.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Medium.svg#0882291fef93bcd06d472e1ee8939c3e') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  500;
+}
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-MediumOblique.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-MediumOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-MediumOblique.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-MediumOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-MediumOblique.svg#16c4709bdfbc71a8fce8e1dd1956eb09') format('svg'); /* Legacy iOS */
+
+  font-style:   oblique;
+  font-weight:  500;
+}
+
+
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Heavy.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Heavy.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Heavy.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Heavy.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Heavy.svg#5210a83cbeaba3c69473142e37abdff7') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  600;
+}
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-HeavyOblique.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-HeavyOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-HeavyOblique.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-HeavyOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-HeavyOblique.svg#f7a040cbecbe33397454207921e572b0') format('svg'); /* Legacy iOS */
+
+  font-style:   oblique;
+  font-weight:  600;
+}
+
+
+
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-Black.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-Black.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-Black.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-Black.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-Black.svg#3f32b7b0e932d6bbe85d14c9bded23e3') format('svg'); /* Legacy iOS */
+
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'AvenirFirst';
+  src: url('fonts/avenir/Avenir-BlackOblique.eot'); /* IE9 Compat Modes */
+  src: url('fonts/avenir/Avenir-BlackOblique.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/avenir/Avenir-BlackOblique.woff') format('woff'), /* Modern Browsers */
+       url('fonts/avenir/Avenir-BlackOblique.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('fonts/avenir/Avenir-BlackOblique.svg#6175e792a9e64aac3ec0f3ab2e7076d4') format('svg'); /* Legacy iOS */
+
+  font-style:   oblique;
+  font-weight:  700;
+}
+
+
+
+// Variables & Mixins
 
 $grey: #3d464d;
 $blue: #24ADE3;
@@ -23,6 +174,15 @@ $orange: #F05A24;
     transition: all $speed ease;
 }
 
+// General
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
 html, body {
     margin: 0px;
     height: 100%;
@@ -30,7 +190,9 @@ html, body {
 
 body {
     font-family: "Open Sans", sans-serif;
-    background-color: #000;
+    font-weight: 300px;
+    font-size: 14px;
+    background-color: #3D464D;
     /*color: #3d464d;*/
     color: #fff;
     padding: 0 20px;
@@ -39,14 +201,12 @@ body {
         padding: 0;
     }
 
-    &.loaded {
-        &::after { opacity: 0.4; }
-    }
+    &.loaded::after { opacity: 1; }
 }
 
 body::after {
     content: "";
-    background: url('../images/bg.jpg') no-repeat center;
+    background: url('../images/bg-dark.jpg') no-repeat center;
     background-size: cover;
     opacity: 0.0;
     top: 0;
@@ -91,7 +251,7 @@ p:last-child {
     }
 
     h1.large {
-        font-family: 'Avenir', 'Montserrat', sans-serif;
+        font-family: 'Avenir', 'AvenirFirst', 'Raleway', sans-serif;
         font-weight: 400;
         font-size: 32px;
         width: 280px;
@@ -139,7 +299,7 @@ p:last-child {
             }
 
             a.button {
-                font-family: 'Avenir', 'Montserrat', sans-serif;
+                font-family: 'Avenir', 'AvenirFirst', 'Raleway', sans-serif;
                 margin: 0 auto 16px;
                 text-decoration: none;
                 background: #24ADE3;
@@ -228,6 +388,10 @@ p:last-child {
         }
     }
 
+    .social a {
+        padding: 5px;
+        font-size: 20px;
+    }
 
 }
 
@@ -250,7 +414,7 @@ p:last-child {
 
     h3 {
         margin-bottom: 30px;
-        font-family: 'Avenir', 'Montserrat', sans-serif;
+        font-family: 'Avenir', 'AvenirFirst', 'Raleway', sans-serif;
     }
 }
 
