@@ -341,7 +341,7 @@ module.exports = function (grunt) {
         // reference in your app
         modernizr: {
             dist: {
-                devFile: 'bower_components/modernizr/modernizr.js',
+                devFile: 'app/bower_components/modernizr/modernizr.js',
                 outputFile: '<%= config.dist %>/assets/scripts/vendor/modernizr.js',
                 files: {
                     src: [
