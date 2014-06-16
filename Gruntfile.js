@@ -208,7 +208,7 @@ module.exports = function (grunt) {
                     src: [
                         '<%= config.dist %>/assets/scripts/{,*/}*.js',
                         '<%= config.dist %>/assets/styles/{,*/}*.css',
-                        '<%= config.dist %>/images/{,*/}*.*',
+                        '<%= config.dist %>/assets/images/{,*/}*.*',
                         '<%= config.dist %>/assets/styles/fonts/{,*/}*.*',
                         '<%= config.dist %>/*.{ico,png}'
                     ]
@@ -229,7 +229,7 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images']
+                assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/assets/images']
             },
             html: ['<%= config.dist %>/{,*/}*.html'],
             css: ['<%= config.dist %>/assets/styles/{,*/}*.css']
@@ -242,7 +242,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= config.app %>/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= config.dist %>/images'
+                    dest: '<%= config.dist %>/assets/images'
                 }]
             }
         },
@@ -253,7 +253,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= config.app %>/images',
                     src: '{,*/}*.svg',
-                    dest: '<%= config.dist %>/images'
+                    dest: '<%= config.dist %>/assets/images'
                 }]
             }
         },
