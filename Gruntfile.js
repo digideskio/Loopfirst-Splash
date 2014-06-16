@@ -34,7 +34,7 @@ module.exports = function (grunt) {
                 tasks: ['bowerInstall']
             },
             js: {
-                files: ['<%= config.app %>/scripts/{,*/}*.js'],
+                files: ['<%= config.app %>/assets/scripts/{,*/}*.js'],
                 tasks: ['jshint'],
                 options: {
                     livereload: true
@@ -132,8 +132,8 @@ module.exports = function (grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= config.app %>/scripts/{,*/}*.js',
-                '!<%= config.app %>/scripts/vendor/*',
+                '<%= config.app %>/assets/scripts/{,*/}*.js',
+                '!<%= config.app %>/assets/scripts/vendor/*',
                 'test/spec/{,*/}*.js'
             ]
         },
@@ -206,7 +206,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
+                        '<%= config.dist %>/assets/scripts/{,*/}*.js',
                         '<%= config.dist %>/assets/styles/{,*/}*.css',
                         '<%= config.dist %>/images/{,*/}*.*',
                         '<%= config.dist %>/assets/styles/fonts/{,*/}*.*',
@@ -295,8 +295,8 @@ module.exports = function (grunt) {
         // uglify: {
         //     dist: {
         //         files: {
-        //             '<%= config.dist %>/scripts/scripts.js': [
-        //                 '<%= config.dist %>/scripts/scripts.js'
+        //             '<%= config.dist %>/assets/scripts/scripts.js': [
+        //                 '<%= config.dist %>/assets/scripts/scripts.js'
         //             ]
         //         }
         //     }
@@ -342,12 +342,12 @@ module.exports = function (grunt) {
         modernizr: {
             dist: {
                 devFile: 'bower_components/modernizr/modernizr.js',
-                outputFile: '<%= config.dist %>/scripts/vendor/modernizr.js',
+                outputFile: '<%= config.dist %>/assets/scripts/vendor/modernizr.js',
                 files: {
                     src: [
-                        '<%= config.dist %>/scripts/{,*/}*.js',
+                        '<%= config.dist %>/assets/scripts/{,*/}*.js',
                         '<%= config.dist %>/assets/styles/{,*/}*.css',
-                        '!<%= config.dist %>/scripts/vendor/*'
+                        '!<%= config.dist %>/assets/scripts/vendor/*'
                     ]
                 },
                 uglify: true
